@@ -44,7 +44,7 @@ public class App {
             return;
         }
 
-        // connect and send
+        // connect and send.
         EmailSender sender = null;
         try {
             sender = new EmailSender(host, port);

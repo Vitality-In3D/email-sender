@@ -9,11 +9,7 @@ public class EmailSender {
     private BufferedReader reader;
     private BufferedWriter writer;
 
-    /*
-     * Constructor opens Socket to host/port. If the Socket throws an exception
-     * during opening,
-     * the exception is not handled in the constructor.
-     */
+    // Constructor opens Socket to host/port.
     public EmailSender(String host, int port) throws UnknownHostException, IOException {
         this.socket = new Socket(host, port);
         this.reader = new BufferedReader(new InputStreamReader(socket.getInputStream(), StandardCharsets.UTF_8));
