@@ -3,7 +3,13 @@ package utb.fai;
 public class App {
 
     public static void main(String[] args) {
-        // need at least 6 args: host port from to subject text
+        // args[0] - Adresa SMTP serveru (String)
+        // args[1] - Číslo portu SMTP serveru (int)
+        // args[2] - Email odesílatele (String)
+        // args[3] - Email příjemce (String)
+        // args[4] - Předmět emailu (String)
+        // args[5] - Obsah emailu (String)
+
         if (args.length < 6) {
             System.err.println("Chyba: Nedostatecny pocet argumentu.");
             System.err.println("Pouziti: java -jar app.jar <host> <port> <from> <to> <subject> <text>");
